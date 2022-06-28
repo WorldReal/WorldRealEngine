@@ -18,7 +18,7 @@ class GLStart{
    */
   static _loadShader(gl, type, source) {
     const shader = gl.createShader(type);// 创建着色器对象
-    gl.shaderSource(shader, source);// 提供shader代码
+    gl.shaderSource(shader, source);// 提供shader代码  绑定资源
     gl.compileShader(shader);// 编译 -> 生成着色器
     return shader;
   }
