@@ -1,0 +1,10 @@
+
+node_modules
+# 打包
+dist/**
+distNoMinify/**
+
+tsconfig.json
+
+# nodejs等开发工具
+Tools

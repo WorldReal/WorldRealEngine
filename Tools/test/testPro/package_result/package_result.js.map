@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/core/outsource/LibManager.ts", "../src/core/control/template/Template.ts", "../src/WorldRealEngine.ts"],
+  "sourcesContent": ["import * as turf from '@turf/helpers'\r\nclass LibManager {\r\n  static getTurf() {\r\n    return turf\r\n  }\r\n\r\n  static toString() {\r\n    return 'turf'\r\n  }\r\n\r\n}\r\n\r\nexport{LibManager, turf}", "import { turf } from '../../outsource/LibManager'\r\n\r\nclass Template {\r\n static getPoint(lon:number, lat:number):turf.Feature<turf.Point> {\r\n  const point = turf.point([lon, lat])\r\n  return point;\r\n }\r\n}\r\n\r\nexport { Template }\r\n\r\n// https://blog.csdn.net/u010447508/article/details/105562542\r\n", "export const VERSION = '0.0.5';\nexport { LibManager } from './core/outsource/LibManager'\r\nexport { Template } from './core/control/template/Template'\r\n"],
+  "mappings": "AAAA,gCACA,GAAM,GAAN,KAAiB,CACf,MAAO,UAAU,CACf,MAAO,EACT,CAEA,MAAO,WAAW,CAChB,MAAO,MACT,CAEF,ECRA,GAAM,GAAN,KAAe,CACd,MAAO,UAAS,EAAY,EAAqC,CAEhE,MADc,GAAK,MAAM,CAAC,EAAK,CAAG,CAAC,CAEpC,CACD,ECPO,GAAM,GAAU",
+  "names": []
+}

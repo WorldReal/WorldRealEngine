@@ -1,0 +1,4 @@
+class tsThis{
+
+}
+export{tsThis}

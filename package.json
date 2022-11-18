@@ -1,0 +1,49 @@
+{
+  "name": "WorldRealEngine",
+  "version": "0.0.5",
+  "main": "dist/WorldRealEngine.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geogpu/WorldRealEngine.git"
+  },
+  "keywords": [
+    "js",
+    "cesium"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build（完整构建）": "gulp GULP_BUILD",
+    "tsc_build（ts声明文件.d.ts）": "tsc --build tsconfig.json",
+    "package_index（更新文件头）": "gulp GULP_PACKAGE",
+    "build_test（快速测试）": "gulp GULP_TEST",
+    "build_max": "gulp GULP_BUILD_NOMINI",
+    "gulp_list（gulp结构）": "gulp --tasks",
+    "gulp_connect（gulp连接性测试）": "gulp GULP_CONNECT",
+    "install_all（安装依赖）": "pnpm i",
+    "npm_publish（npm发布）": "npm publish",
+    "pnpm_outdated（依赖版本）": "pnpm outdated",
+    "pnpm_update（依赖非强制升级）": "pnpm update",
+    "custom_qkflow（qk工作流）": "node Tools/workflow/qkflow.js version"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.43",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "esbuild": "^0.14.43",
+    "eslint": "^7.32.0",
+    "globby": "^12.2.0",
+    "gulp": "^4.0.2",
+    "mocha": "^9.2.2",
+    "typescript": "^4.7.3",
+    "@turf/helpers": "^6.5.0"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "@turf/helpers": "^6.5.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "testpro",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "install_all": "pnpm i",
+    "dev": "vite",
+    "dev_force": "vite --force",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3",
+    "vite": "^3.0.0-alpha.3"
+  },
+  "dependencies": {
+    "@turf/helpers": "^6.5.0"
+  }
+}
